@@ -99,6 +99,24 @@
 	<p>kinda sorta repaired by <a href="https://scratch.mit.edu/users/YelloJello1/" target="_blank">@YelloJello1</a> via a custom cors proxy.</p>
 	<p>check the original site <a href="https://cst1229.eu.org/treemix/" target="_blank">Here</a></p>
 
+	<div><input type="text" placeholder="Scratch project URL or ID number" id="projectInput"> <button id="goButton">go!</button></div>
+	<div>
+		or...
+		<input type="file" id="filePicker" style="display: none" accept=".json">
+		<a href="#" id="exportURL"><button tabindex="-1" disabled id="exportButton">export JSON</button></a>
+		<button id="importButton">import from exported JSON</button>
+	</div>
+	<div>
+		<label>
+			Tree viewer:
+			<select id="treeViewer">
+				<option value="scratch">Scratch's</option>
+				<option value="text">Text-based list</option>
+				<option value="textCompact">Text-based list (compact)</option>
+			</select>
+		</label>
+	</div>
+
 	<br/>
 	<div id="statusText"></div>
 	<div id="queueText"></div>
